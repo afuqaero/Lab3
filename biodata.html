@@ -1,125 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodata</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4faff;
+      color: #002147;
+    }
+
+    header {
+      background-color: #d9ecff;
+      text-align: center;
+      padding: 25px 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.2em;
+      color: #003366;
+    }
+
+    a.back {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    a.back:hover {
+      background-color: #005bb5;
+    }
+
+    .intro {
+      text-align: center;
+      margin: 30px 0 20px 0;
+    }
+
+    .intro h3 {
+      color: #004e92;
+      margin-top: 10px;
+      font-weight: 400;
+    }
+
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: white;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f0f8ff;
+    }
+
+    table td {
+      border: 1px solid #007bff;
+      padding: 12px 16px;
+      vertical-align: middle;
+      font-size: 1em;
+    }
+
+    table td:first-child {
+      font-weight: bold;
+      color: #003366;
+      background-color: #e6f2ff;
+      width: 25%;
+    }
+
+    img {
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 0.95em;
+    }
+
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      table {
+        width: 95%;
+        font-size: 0.9em;
+      }
+
+      img {
+        width: 150px;
+        height: 200px;
+      }
+    }
+  </style>
 </head>
 
-<style>
-    table,td,tr{
-        border: 1px solid black;
-        width: 80%;
-        border-collapse: collapse;
-        max-width: 900px;
-        margin: 20px auto;
-
-    }
-
-
-
-    img{
-        width: 400px;
-        height: 500px;
-    }
-
-</style>
-
-
 <body>
+  <header>
+    <h1>Welcome to My Biodata!</h1>
+    <a href="index.html" class="back">← Back to Home</a>
+  </header>
 
-    <div class="intro">
-        <br>
-        <a href="/index.html">Back</a>
-        <h1>Welcome to my biodata!</h1>
-        <h3>Below is a biodata details of how I really am: </h3>
-    </div>
-    <br>
+  <div class="intro">
+    <h3>Below is a detailed biodata showing who I really am:</h3>
+  </div>
 
-    <div class="table">
-        <table width="100%">
+  <div class="table">
+    <table>
+      <tr>
+        <td>Name</td>
+        <td>Muhammad Afiq Bin Rudy Azmir</td>
+        <td><img src="profilepic.jpeg" alt="Profile Picture"></td>
+      </tr>
+      <tr>
+        <td>Date of birth</td>
+        <td colspan="2">12 October 2000</td>
+      </tr>
+      <tr>
+        <td>Religion</td>
+        <td colspan="2">Islam</td>
+      </tr>
+      <tr>
+        <td>Race</td>
+        <td colspan="2">Malay</td>
+      </tr>
+      <tr>
+        <td rowspan="4">Address</td>
+        <td>Street</td>
+        <td>Taman Cempaka</td>
+      </tr>
+      <tr>
+        <td>Town</td>
+        <td>Ampang</td>
+      </tr>
+      <tr>
+        <td>District</td>
+        <td>Hulu Langat</td>
+      </tr>
+      <tr>
+        <td>State</td>
+        <td>Selangor</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Contact</td>
+        <td>Mobile Phone</td>
+        <td>011-3187 1779</td>
+      </tr>
+      <tr>
+        <td>Social Media</td>
+        <td>@feeq_azmir</td>
+      </tr>
+      <tr>
+        <td>Website</td>
+        <td>feeqazmir.com</td>
+      </tr>
+      <tr>
+        <td>Course and Institution</td>
+        <td colspan="2">Universiti Tun Hussein Onn Malaysia</td>
+      </tr>
+      <tr>
+        <td>Programming Skills</td>
+        <td colspan="2">C++, C, HTML, CSS</td>
+      </tr>
+      <tr>
+        <td>Hobbies</td>
+        <td colspan="2">Flight simming, reading, watching documentaries</td>
+      </tr>
+      <tr>
+        <td>2025 Wishlist</td>
+        <td colspan="2">To create a successful business.</td>
+      </tr>
+    </table>
+  </div>
 
-            <tr>
-                <td>Name</td>
-                <td>Muhammad Afiq Bin Rudy Azmir</td>
-                <td><img src="/profilepic.jpeg" alt=""></td>
-            </tr>
-
-            <tr>
-                <td>Date of birth</td>
-                <td colspan="2">12 October 2000</td>
-            </tr>
-            <tr>
-                <td>Religion</td>
-                <td colspan="2">Islam</td>
-                
-            </tr>            
-            
-            <tr>
-                <td>Race</td>
-                <td colspan="2">Malay</td>
-                
-            </tr>            
-            <tr>
-                <td rowspan="4">Address</td>
-                <td>Street</td>
-                <td>Taman Cempaka</td>
-            </tr>            
-            <tr>
-                <td>Town</td>
-                <td>Ampang</td>
-                
-            </tr>            
-            <tr>
-                <td>District</td>
-                <td>Hulu Langat</td>
-                
-            </tr>            
-            <tr>
-                <td>State</td>
-                <td>Selangor</td>
-                
-            </tr>            
-            <tr>
-                <td rowspan="3">Contact</td>
-                <td>Mobile Phone</td>
-                <td>011- 3187 1779</td>
-            </tr>            
-            <tr>
-                <td>Social Media</td>
-                <td>@feeq_azmir</td>
-            </tr>
-
-            <tr>
-                <td>Website</td>
-                <td>feeqazmir.com</td>
-            </tr>
-
-            <tr>
-                <td>Course and Institution</td>
-                <td colspan="2">Universiti Tun Hussein Onn Malaysia</td>
-            </tr>
-
-            <tr>
-                <td>Programming Skills</td>
-                <td colspan="2">C++,C,HTML,CSS</td>
-            </tr>
-
-            <tr>
-                <td>Hobbies</td>
-                <td colspan="2">Flight simming, reading, watching documentary</td>
-            </tr>
-
-            <tr>
-                <td>2025 Wishlist</td>
-                <td colspan="2">To create a successful business.</td>
-            </tr>
-        </table>
-
-    </div>
-    
+  <footer>
+    &copy; 2025 Muhammad Afiq Bin Rudy Azmir | UTHM
+  </footer>
 </body>
-
-
-
 </html>

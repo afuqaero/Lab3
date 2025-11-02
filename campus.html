@@ -1,68 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Campus Life</title>
-</head>
-
-<style>
-
-
-    .section1, .section2, .section3{
-        background-color: lightblue;
-        border-radius: 25px;
-        margin: 30px auto;
-        padding:25px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-        max-width: 800px;
-        font-family: Arial, Helvetica, sans-serif;
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Campus Life</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
+    body {
+      background-color: #f4faff;
+      color: #002147;
+    }
 
-</style>
+    header {
+      background-color: #d9ecff;
+      text-align: center;
+      padding: 25px 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
+    header h1 {
+      font-size: 2.2em;
+      color: #003366;
+    }
+
+    a.back {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    a.back:hover {
+      background-color: #005bb5;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background-color: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    section h2 {
+      color: #003366;
+      margin-bottom: 15px;
+      border-left: 6px solid #007bff;
+      padding-left: 10px;
+      font-size: 1.6em;
+    }
+
+    section img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      display: block;
+      margin: 15px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    section p {
+      font-size: 1.05em;
+      line-height: 1.8;
+      text-align: justify;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.95em;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      section h2 {
+        font-size: 1.4em;
+      }
+
+      section p {
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
 
 <body>
+  <header>
+    <h1>My Campus Life</h1>
+    <a href="index.html" class="back">← Back to Home</a>
+  </header>
 
-    <a href="/index.html">Back</a>
-
-    <section class="section1">
-
-        <h1>Section 1: About me!</h1>
-        <img style="width:400px; ,height: 300px; " src="/profilepic.jpeg">
-        <p>My name is Muhammad Afiq bin Rudy Azmir (Matrix No. CI220139) and I am currently pursuing a Bachelor’s Degree in Software Engineering at UTHM. I am now in my fourth semester out of seven.
-
-Before joining Software Engineering, I actually took a different path. In 2022, I first enrolled at UTHM under the Bachelor of Mechanical Manufacturing Engineering program. Although I have a strong foundation in engineering, I realized that it wasn’t the direction I truly wanted to pursue.
-
-During my first year, I decided to take a one-semester break to chase my dream of becoming a pilot. That experience helped me discover my real passion — solving problems through logic and technology. While continuing my first semester in engineering, I applied for a transfer to Software Engineering. My application was approved during my second semester, and since then, I’ve been happily pursuing my studies in this field.</p>
-
+  <main>
+    <section>
+      <h2>Section 1: About Me!</h2>
+      <img src="profilepic.jpeg" alt="Profile Picture">
+      <p>
+        My name is <strong>Muhammad Afiq bin Rudy Azmir</strong> (Matrix No. CI220139), and I am currently pursuing a
+        <strong>Bachelor’s Degree in Software Engineering</strong> at UTHM. I am now in my fourth semester out of seven.
+      </p>
+      <p>
+        Before joining Software Engineering, I actually took a different path. In 2022, I first enrolled at UTHM under
+        the Bachelor of Mechanical Manufacturing Engineering program. Although I had a strong foundation in engineering,
+        I realized that it wasn’t the direction I truly wanted to pursue.
+      </p>
+      <p>
+        During my first year, I decided to take a one-semester break to chase my dream of becoming a pilot. That experience
+        helped me discover my real passion — solving problems through logic and technology. Later, I applied for a program
+        transfer to Software Engineering and have been loving it ever since.
+      </p>
     </section>
 
-    <section class="section2">
-        <h1>Section 2: What do i do?</h1>
-        <img style= "width:400px; , height: 300px; " src="/plane.jpg">
-        <p>Even as a full-time student, I always try to keep myself busy and productive. One of the things I truly enjoy is working as a part-time online chess tutor for young children aged 13 and below. I teach them the fundamentals of chess — how each piece moves, basic strategies, and how to analyze their games. We also work through structured practice modules and exercises together. Teaching has helped me strengthen my own focus and patience while sharing my passion for the game.
-
-During my free time, I love going plane spotting. Aviation has always fascinated me, so whenever I can, I’ll bring my camera and take the LRT from my home to the airport just to capture photos of rare aircraft. It’s something I find peaceful and inspiring — combining my interest in photography with my lifelong love for aviation.</p>
-
+    <section>
+      <h2>Section 2: My Daily Routine @ UTHM</h2>
+      <img src="uthmlife.jpeg" alt="UTHM Campus Life">
+      <p>
+        I usually travel to campus by bus, and my day often begins as early as 8 a.m., depending on my class schedule.
+        My classes run from Monday to Thursday, while I like to keep Friday free for leisure activities, personal study,
+        and a bit of rest.
+      </p>
+      <p>
+        I live in <strong>Kolej Kediaman Perwira</strong>, which is about 2 kilometers from campus. Fortunately, there are
+        buses provided to transport us to class. It can get a little crowded on Monday mornings, and sometimes I arrive
+        slightly later than usual—but over time, I’ve gotten used to it.
+      </p>
+      <p>
+        What I enjoy most about living at UTHM is how affordable and convenient everything is. From food to groceries and
+        daily essentials, everything I need is just within walking distance of my college. Life here is simple, practical,
+        and comfortable — and I really enjoy that balance.
+      </p>
     </section>
+  </main>
 
-    <section class="section3">
-        <h1>Section 3: My Daily Routine @UTHM </h1>
-        <img style="width:400px;, height:300px;" src="/uthmlife.jpeg">
-        <p>I usually travel to campus by bus, and my day often begins as early as 8 a.m., depending on my class schedule. My classes run from Monday to Thursday, while I like to keep Friday free for leisure activities, personal study, and a bit of rest. I’ve learned that having a packed schedule every single day can be quite tiring, so I prefer having a day to recharge and catch up on other things.
-
-I live in Kolej Kediaman Perwira, which is about 2 kilometers from campus. Fortunately, there are buses provided to transport us to class. It can get a little crowded on Monday mornings, and sometimes I arrive slightly later than usual—but over time, I’ve gotten used to it.
-
-What I enjoy most about living at UTHM is how affordable and convenient everything is. From food to groceries and daily essentials, everything I need is just within walking distance of my college. Life here is simple, practical, and comfortable—and I really enjoy that balance.</p>
-
-    </section>
-
-    
+  <footer>
+    &copy; 2025 Muhammad Afiq Bin Rudy Azmir | UTHM
+  </footer>
 </body>
-
-
-
 </html>

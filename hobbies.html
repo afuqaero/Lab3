@@ -1,11 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Hobbies</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4faff;
+      color: #002147;
+    }
+
+    header {
+      background-color: #d9ecff;
+      text-align: center;
+      padding: 25px 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.2em;
+      color: #003366;
+    }
+
+    a.back {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    a.back:hover {
+      background-color: #005bb5;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background-color: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    section h2 {
+      color: #003366;
+      margin-bottom: 15px;
+      border-left: 6px solid #007bff;
+      padding-left: 10px;
+      font-size: 1.6em;
+    }
+
+    section img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      display: block;
+      margin: 15px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    section p {
+      font-size: 1.05em;
+      line-height: 1.8;
+      text-align: justify;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    ul {
+      margin-top: 15px;
+      margin-left: 25px;
+      line-height: 1.8;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.95em;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      section h2 {
+        font-size: 1.4em;
+      }
+
+      section p {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    
+  <header>
+    <h1>My Hobbies & Interests</h1>
+    <a href="index.html" class="back">← Back to Home</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>Section 1: What Do I Do?</h2>
+      <img src="plane.jpg" alt="Plane spotting">
+      <p>
+        Even as a full-time student, I like keeping myself busy and productive. One of my favorite things to do is
+        teaching kids chess online. I tutor children aged 13 and below, showing them the fundamentals of chess — how
+        each piece moves, basic tactics, and ways to analyze their games. Teaching has really helped me improve my own
+        patience and focus while sharing a hobby I’ve loved since I was young.
+      </p>
+      <p>
+        Outside of that, I spend a lot of my free time plane spotting. I’ve always been fascinated by aviation, so when
+        I have free time, I take the LRT to the airport with my camera and just watch planes land and take off. It’s
+        peaceful, and there’s something about the sound of jet engines that clears my mind. I guess it’s a way for me
+        to stay connected to that childhood dream of becoming a pilot.
+      </p>
+    </section>
+
+    <section>
+      <h2>Section 2: My Favorite Hobbies</h2>
+      <p>
+        I’ve always been the kind of person who enjoys learning and trying new things. My hobbies are a big part of who
+        I am — they help me unwind, stay creative, and keep my curiosity alive.
+      </p>
+      <ul>
+        <li><strong>Flight Simulation ✈️</strong> — I love experimenting with different aircraft and routes. It’s
+          incredible how realistic flight simulators have become, and it gives me the feeling of being in a real
+          cockpit.</li>
+        <li><strong>Reading 📚</strong> — I read anything from aviation stories to tech articles and personal
+          development books. It helps me slow down and think deeper about life and goals.</li>
+        <li><strong>Watching Documentaries 🎥</strong> — I enjoy watching documentaries about technology, nature, and
+          real-world innovation. It’s like learning something new without feeling like I’m studying.</li>
+        <li><strong>Chess ♟️</strong> — Chess keeps my brain sharp. I like solving puzzles and analyzing tricky
+          endgames. It’s a mental workout I never get tired of.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Section 3: Interesting Facts About Me</h2>
+      <p>
+        I’ve always believed that life becomes more meaningful when we take a few risks and explore what we truly love.
+        Before I joined Software Engineering, I actually took a semester off to chase my dream of becoming a pilot. I
+        didn’t end up flying professionally, but that journey helped me discover my passion for logic and technology —
+        the same drive that pushed me into coding.
+      </p>
+      <p>
+        I’m also a huge fan of learning things independently. Whether it’s tweaking my PC setup for smoother
+        simulations, learning new programming languages, or just diving deep into random YouTube tutorials, I find joy
+        in figuring things out on my own.
+      </p>
+      <p>
+        For me, hobbies aren’t just a way to kill time — they’re small reminders of what makes life exciting. Every new
+        interest opens up a new way of seeing the world, and I never want to stop exploring that.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Muhammad Afiq Bin Rudy Azmir | UTHM
+  </footer>
 </body>
 </html>
